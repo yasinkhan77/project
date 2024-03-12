@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+body ,html{
+    height: 100vh;
+    width: 100%;
+}
+#main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 32, 23, 0.923);
+    position: relative;
+}
+#back img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#top {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.906); */
+}
+#workingarea {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin: 0  auto ;
+    /* background-color: black; */
+    /* border: 1px solid red ; */
+    max-width: 1920px;
+
+}
+nav {
+  width: 100%;
+  margin: 0px 0px 0px 0px ;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  #n-left img {
+      height:90px ;
+      width: 90px;
+    }
+#n-left {
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+#n-right {
+    display:flex;
+    align-items: center;
+    gap:12px;
+    padding: 0px 20px 0px 0px;
+}
+#n-left a {
+    pointer-events: all;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 6000;
+}
+#n-right a {
+    pointer-events: all;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 6000;
+}
+#hero {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translate(0%,-50%);
+    justify-content: space-between;
+    width: 100%;
+    
+}
+#hero-left {
+    min-width: 50%; 
+
+}
+#hero-right {
+    min-width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+#hero-left  .elem h1:nth-child(1){
+    top: 0;
+}
+#hero-left  .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height:.9;
+    font-family:monospace;
+    color: white;
+    font-size: 6vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#hero-left .elem {
+    position: relative;
+    height: 6vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#hero-left  button {
+    pointer-events: all;
+    padding:.8vw 3px;
+    font-size: 3vw;
+    margin-top:1.5vw ;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+button:active {
+    transform: scale(0.5vw);
+}
+#hero-right p{
+    text-align: right;
+    font-size: 7px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#hero-right #imagediv {
+    height:90px ;
+    background-image:url(catia-dombaxe-8Lvw09PD3rA-unsplash.jpg);
+    background-size: cover;
+    background-position:center ;
+    width:40% ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#hero-right p:nth-child(3) {
+    color: red;
+}
